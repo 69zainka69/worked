@@ -28,5 +28,7 @@
       </div>
     </section>
     
- 
+    <div>{{ session('status') }}</div>
+    <p>dfgdfgfgdf</p>
+    <p>{{ }}</p>
 @endsection

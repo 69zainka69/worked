@@ -23,7 +23,110 @@
 @endsection
 
 
+<style>
+    .sliderbacks {
+    background-image: url(/images/btttt.png);
+    height: 175px;
+    width: 160px;
+    display: block;
+    position: absolute;
+    bottom: 456px;
+    left: 414px;
+}
+.wrappers {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
 
+.wrappers .cards {
+  position: relative;
+  cursor: pointer;
+}
+
+.wrappers .cards .faces {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.wrappers .cards .faces.face1s {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.wrappers .cards:hover .face.face1 {
+  background: #ff0057;
+  transform: translateY(0);
+}
+
+.wrappers .cards .faces.face1s .contents {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.wrappers .cards:hover .faces.face1s .contents {
+  opacity: 1;
+}
+
+.wrappers .cards .faces.face1s .contents img {
+  max-width: 100px;
+}
+
+.wrappers .cards .faces.face1s .contents h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.wrappers .cards .faces.face2s {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.wrappers .cards:hover .faces.face2s {
+  transform: translateY(0);
+}
+
+.wrappers .cards .faces.face2s .contents p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrappers .cards .faces.face2s .contents a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.wrappers .cards .faces.face2s .contents a:hover {
+  background: #333;
+  color: #fff;
+}
+    </style>
+
+@section('EN', '/en/about-company')
+@section('RU', '/o-kompanii')
+@section('DE', '/de/ueber-das-unternehmen')
 @section('content')
 <!-- BANNER -->
 <div id="home" class="banner">
@@ -35,7 +138,6 @@
             <div class="container d-flex align-items-center h-center">
                 <div class="wrap-caption">
                     <h1 class="caption-heading text-white">О компании <br>Staffplex</h1>
-                    <a href="#form-footer" class="btn btn-primary">Оставить заявку</a>
                 </div>   
             </div>
         </div>
@@ -77,16 +179,17 @@
 
             <div class="row">
 
-                <div class="col-sm-6 col-md-6">
+                <div class="col-sm-12 col-md-6">
                     <h4 class="section-heading text-left text-black no-after mb-5">
                         О компании <span class="text-primary">Staffplex</span>
                     </h4>
-                    <p>Компания Staffplex— это строительный подрядчик, что специализируется на предоставлении услуг в сфере аутстаффинга.</p>
+                    <p>Компания Staffplex— это Ваш HR, что специализируется на предоставлении услуг в сфере аутстаффинга.</p>
                        <p> К сожалению, еще не все знают о преимуществах данных услуг. Этот способ вывода персонала за штат, используется западными странами на протяжении нескольких десятилетий, однако в Германии к такому способу сотрудничества все еще относятся с опаской. И каждый имеет на это право, но наша компания, исходя из многолетнего опыта, может с уверенностью заявить, что мы держим контроль над всеми процессами, соблюдая все законы и выполняя все договоренности в срок. Помимо того, Staffplex польская компания, поэтому с точки зрения цен, мы очень выгодный партнер.
                        </p><p>    Мы помогаем закрыть множество вопросов: качественно отбираем персонал, отвечаем за все оформления и юридические вопросы, по надобности находим жилье возле объектов, выплачиваем зарплату каждому сотрудника, помогаем решить все бытовые вопросы каждого строителя. Заказчик получает готового специалиста у себя на объекте.</p>
                 </div>
-                <div class="col-sm-6 col-md-6 pleft">
-                    <img src="/images/worker.png" />
+                <div class="col-sm-12 col-md-6 pleft">
+                    <div style="z-index: -1;" class="sliderbacks"> </div>
+                    <img style="z-index: 9;" src="/images/worker.png" />
                     </div>
                 </div>
             </div>
@@ -94,12 +197,16 @@
         </div>
     </div>
 
-
+    <h3 style="text-align: center; color:black;">Мы можем уверенно озвучить причины, почему аутстаффинг- это выгодный путь к оптимизации бизнеса и почему нам стоит доверять:</h3>
+                 
 <div class="section bgi-cover-center bg-overlay-light">
+
     <div class="content-wrap">
         <div class="container">
+            
                 <div class="row">
-                  <div class="col">
+                    <div class="col">
+                        
                    <h4 class="fas fa-check-circle">ДОСТУПНЫЕ ЦЕНЫ</h4>
                    <p>Экономия в наше время- это важный инструмент в развитии бизнеса. И на первый взгляд может показаться, что ваши расходы будут увеличиваться за счет комиссии. Но Компания Staffplex закроет все ваши вопросы связанные с проверками, трудовыми спорами, так как любые претензии могут предъявляться лишь провайдеру.</p>
                   </div>
@@ -148,7 +255,7 @@
             <div class="container d-flex align-items-center h-center">
                 <div class="wrap-caption">
                     <br><br>
-                    <h5  class="text-white">Мы поможем подобрать то рабочее место, <br><br>которое будет соответствовать <br><br>вашим потребностям и ожиданиям!</h5>
+                    <h5 style="padding-top:350px;" class="text-white">Мы поможем подобрать то рабочее место, <br><br>которое будет соответствовать <br><br>вашим потребностям и ожиданиям!</h5>
                     <br>
                     <div class="container">
                        
@@ -214,20 +321,22 @@
 <p>Мы являемся экспертами в строительстве и строительном персонале!</p>
             <div style="padding-left:11%;" class="row">
                 <div class="col">
-                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div style="background-color: #082265!important;" class="card text-white mb-3" style="max-width: 18rem;">
                         <div class="card-header">Елена Савченко</div>
                         <div class="card-body">
-                            <img width="210px"  src="/images/lena-scaled.jpg" />
-                          <p class="card-text">Документооборот</p>
+                            <img width="210px" class="round"  src="/images/lena-scaled.jpg" />
+                          <p class="card-text">Поможет с документами и финансовыми операциями</p>
+                          <a style="text-align: center;" href="mailto:info@staffplex.de">info@staffplex.de</a>
                         </div>
                       </div>
                 </div>
                 <div class="col">
-                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div style="background-color: #082265!important;" class="card text-white mb-3" style="max-width: 18rem;">
                         <div class="card-header">Юрий Бочковский</div>
                         <div class="card-body">
-                         <img width="210px"  src="/images/yura-scaled.jpg" />
-                          <p class="card-text">Рекрутер персонала</p>
+                         <img width="210px" class="round"  src="/images/yura-scaled.jpg" />
+                          <p class="card-text">Личный консультант, любой ваш вопрос будет решен</p>
+                          <a style="text-align: center;" href="mailto:info@staffplex.de">info@staffplex.de</a>
                         </div>
                       </div>
                 </div>

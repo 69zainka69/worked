@@ -25,6 +25,11 @@
    }
 </style>
 
+
+@section('EN', '/en/reviews')
+@section('RU', '/otzyvy')
+@section('DE', '/de/bewertungen')
+
 @section('content')
 <!-- BANNER -->
 <div id="home" class="banner">
@@ -35,8 +40,7 @@
             <div class="overlay-bg"></div>
             <div class="container d-flex align-items-center h-center">
                 <div class="wrap-caption">
-                    <h1 class="caption-heading text-white">Новости Staffplex</h1>
-                  <a href="#form-footer" class="btn btn-primary">Оставить заявку</a> 
+                    <h1 class="caption-heading text-white">Отзывы Staffplex</h1>
                     
                 </div>   
             </div>

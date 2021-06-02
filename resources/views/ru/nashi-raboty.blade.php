@@ -21,7 +21,9 @@
 	
 @endsection
 
-
+@section('EN', '/en/portfolio-work')
+@section('RU', '/nashi-raboty')
+@section('DE', '/de/portfolio-2')
 
 @section('content')
 <!-- BANNER -->
@@ -34,7 +36,6 @@
             <div class="container d-flex align-items-center h-center">
                 <div class="wrap-caption">
                     <h1 class="caption-heading text-white">Портфолио</h1>
-                  <a href="#form-footer" class="btn btn-primary">Оставить заявку</a> 
                     
                 </div>   
             </div>

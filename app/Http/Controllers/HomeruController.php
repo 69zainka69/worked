@@ -73,6 +73,12 @@ class HomeruController extends Controller
             'user' => $user,
                                   ]);
     }
+    public function youtube(){
+        $user = Auth::user();
+        return view('ru.youtube', [
+            'user' => $user,
+                                  ]);
+    }
     
    
 }

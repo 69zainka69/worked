@@ -24,12 +24,20 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        return view('admin.index');
-    }
+  
+        public function index(){
+            $user = Auth::user();
+            return view('admin.index', [
+                'user' => $user,
+                                      ]);
+        }
+
     public function indexadmin()
     {
-        return view('admin.index');
+        $user = Auth::user();
+        return view('admin.index', [
+            'user' => $user,
+                                  ]);
     }
 }
+

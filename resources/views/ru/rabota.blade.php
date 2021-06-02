@@ -22,7 +22,9 @@
 	
 @endsection
 
-
+@section('EN', '/en/about-company/work-at-staffplex')
+@section('RU', '/rabota-v-staffplex')
+@section('DE', '/de/ueber-das-unternehmen/arbeiten-sie-bei-staffplex')
 
 @section('content')
 <!-- BANNER -->
@@ -35,7 +37,6 @@
             <div class="container d-flex align-items-center h-center">
                 <div class="wrap-caption">
                     <h1 class="caption-heading text-white">Работа в <br>Staffplex</h1>
-                    <a href="#form-footer" class="btn btn-primary">Оставить заявку</a>
                 </div>   
             </div>
         </div>

@@ -63,10 +63,10 @@
 
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{route('HomeAdmin')}}" class="brand-link">
-      <img src="/img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+    <a href="/admin" class="brand-link">
+      <img src="/images/logo_white.svg" alt="Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">TattooRoom</span>
+      
     </a>
 
     <!-- Sidebar -->
@@ -85,7 +85,7 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           
               <li class="nav-item">
-                <a href="{{route('HomeAdmin')}}" class="nav-link active">
+                <a href="/admin" class="nav-link active">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>
                     Главная
@@ -99,51 +99,29 @@
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-copy"></i>
                   <p>
-                    Категории
+                    Прием форм
                     <i class="fas fa-angle-left right"></i>
                     
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="{{route('category.index')}}" class="nav-link">
+                    <a href="#" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Все категории</p>
+                      <p>Подписка</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{route('category.create')}}" class="nav-link">
+                    <a href="#" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Добавить категорию</p>
+                      <p>Данные с формы</p>
                     </a>
                   </li>
                 
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href="{{route('basket.index')}}" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Заказы
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{route('tranzaktions.index')}}" class="nav-link">
-                  <i class="nav-icon fas fa-columns"></i>
-                  <p>
-                    Отправка салону
-                  </p>
-                </a>
-              </li>
-          
-            </ul>
-          </nav>
-
-          
-          
-
-          
+           
+              
           <li class="nav-item">
             <a href="{{route('logout')}}" class="nav-link">
               <i class="nav-icon far fa-user"></i>
@@ -154,16 +132,12 @@
           </li>
         </ul>
       </nav>
-      <!-- /.sidebar-menu -->
     </div>
-    <!-- /.sidebar -->
   </aside>
 
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
  @yield('content')
  </div>
-  <!-- /.content-wrapper -->
 
   <footer class="main-footer">
     <strong>Copyright &copy; 2021 <a>TattooRoom</a></strong>
@@ -173,15 +147,9 @@
     </div>
   </footer>
 
-  <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
   </aside>
-  <!-- /.control-sidebar -->
 </div>
-<!-- ./wrapper -->
-
-<!-- jQuery -->
 <script src="/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="/plugins/jquery-ui/jquery-ui.min.js"></script>

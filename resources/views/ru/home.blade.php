@@ -18,6 +18,7 @@
 	<!-- / Yoast SEO plugin. -->
 @endsection
 <style>
+
     .round {
     border-radius: 100px; 
     border: 3px solid rgb(0, 0, 0); 
@@ -64,9 +65,17 @@
     position: absolute;
     bottom: 60px;
     left: 140px;
+}
+
+}
+@media (max-width: 994px) { 
+.nones{
+    display: none;
 }}
 </style>
-
+@section('RU', '/')
+@section('EN', '/en/home')
+@section('DE', '/de/hauptseite')
 
 @section('content')
 
@@ -81,7 +90,6 @@
                     <h1 class="caption-heading text-white">Найдите свое
                         место работы
                         прямо сейчас</h1>
-                  <a href="#form-footer" class="btn btn-primary">Оставить заявку</a> 
                     
                 </div>   
             </div>
@@ -152,7 +160,7 @@
             <div class="row">
 
                 <div class="col-sm-12 col-md-4">
-                    <div class="rs-icon-info-3 mb-5">
+                    <div class="rs-icon-info-3 ">
                         <div class="iconss">
                             <img src="https://staffplex.de/wp-content/uploads/2020/12/shield.svg" alt="Официально">
                         </div>
@@ -165,7 +173,7 @@
                 </div>
 
                 <div style="padding-top:50px;" class="col-sm-12 col-md-4">
-                    <div class="rs-icon-info-3 mb-5">
+                    <div class="rs-icon-info-3 ">
                         <div class="iconss">
                             <img src="https://staffplex.de/wp-content/uploads/2020/12/search-icon.svg" alt="Комфортные условия ">
                         </div>
@@ -178,7 +186,7 @@
                 </div>
 
                 <div style="padding-top:100px;" class="col-sm-12 col-md-4">
-                    <div class="rs-icon-info-3 mb-5">
+                    <div class="rs-icon-info-3 ">
                         <div class="iconss">
                             <img src="https://staffplex.de/wp-content/uploads/2020/12/check-all.svg" alt="Своевременные выплаты">
                         </div>
@@ -219,42 +227,6 @@
                 
             </div>
 
-            
-        </div>
-    </div>
-</div>
-
-<!-- OUR TESTIMONIALS & PARTNERS -->
-<div class="section bg-overlay-light">
-    <div class="content-wrap">
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-sm-6 col-md-6">
-                    <img src="images/1.png" />
-                    
-                </div>
-
-                <div class="col-sm-6 col-md-6 pleft">
-                    <h4 class="section-heading text-left text-black no-after mb-5">
-                        Присоединяйтесь к более чем 15000+ технических специалистов <span class="text-primary">Получайте мгновенное оповещение на свой почтовый ящик</span>
-                    </h4>
-                    <p>Будьте всегда вкурсе и узнавай первым о новых вакансиях и важных событиях в Staffplex.</p>
-                    <form method="POST" action="{{ route('sender.store') }}">
-                        @csrf
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Подпишись на рассылку</label>
-                          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
-                          </div>
-                       
-                        <button type="submit" class="btn btn-primary">Подписаться</button>
-                      </form>
-                    </div>
-                   
-                </div>
-
-            </div>
             
         </div>
     </div>

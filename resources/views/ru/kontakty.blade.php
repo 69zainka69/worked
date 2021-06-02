@@ -1,4 +1,4 @@
-@extends('layout.contact')
+@extends('layout.main')
 @section('lang', 'ru')
 @section('title', 'Контакты - Staffplex')
 @section('description', 'Staffplex - контактные данные компании')
@@ -21,7 +21,9 @@
 	<!-- / Yoast SEO plugin. -->
 @endsection
 
-
+@section('EN', '/en/contacts')
+@section('RU', '/kontakty')
+@section('DE', '/de/kontakte')
 
 @section('content')
 <!-- BANNER -->
@@ -33,7 +35,7 @@
             <div class="overlay-bg"></div>
             <div class="container d-flex align-items-center h-center">
                 <div class="wrap-caption">
-                    <h1 class="caption-heading text-white">Новости Staffplex</h1>
+                    <h1 class="caption-heading text-white">Контакты Staffplex</h1>
                     
                 </div>   
             </div>
